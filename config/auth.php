@@ -41,12 +41,7 @@ return [
             'provider' => 'users',
         ],
     ],
-    'guards' => [
-        'web' => [
-            'driver' => 'session',
-            'provider' => 'staff',
-        ],
-    ],
+   
 
     /*
     |--------------------------------------------------------------------------
@@ -70,10 +65,7 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
         ],
-        'staff' => [
-            'driver' => 'eloquent',
-            'model' => App\Models\Staff::class,
-        ],
+        
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',

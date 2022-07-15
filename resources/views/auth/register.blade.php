@@ -37,7 +37,8 @@
                             </div>
                             {{-- insert defaults --}}
                             <input type="hidden" class="image" name="image" value="photo_defaults.jpg">
-                            <div class="form-group">
+                            <input type="hidden" name="role_name" value="Pasien">
+                            {{-- <div class="form-group">
                                 <label class="col-form-label">Role Name</label>
                                 <select class="select @error('role_name') is-invalid @enderror" name="role_name" id="role_name">
                                     <option selected disabled>-- Select Role Name --</option>
@@ -50,7 +51,7 @@
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
-                            </div>
+                            </div> --}}
 
                             <div class="form-group">
                                 <label>Password</label>

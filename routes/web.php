@@ -40,9 +40,9 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
-Route::get('/staff', function () {
-    return view('auth.loginStaff');
-});
+// Route::get('/staff', function () {
+//     return view('auth.loginStaff');
+// });
 
 
 Route::group(['middleware'=>'auth'],function()
@@ -101,11 +101,11 @@ Route::controller(RegisterController::class)->group(function () {
     Route::post('/register','storeUser')->name('register');    
 });
 
-// ------------------------------ register staff ---------------------------------//
-Route::controller(RegisterStaffController::class)->group(function () {
-    Route::get('/registerstaff', 'registerStaff')->name('registerstaff');
-    Route::post('/registerstaff','storeStaff')->name('registerstaff');    
-});
+// // ------------------------------ register staff ---------------------------------//
+// Route::controller(RegisterStaffController::class)->group(function () {
+//     Route::get('/registerstaff', 'registerStaff')->name('registerstaff');
+//     Route::post('/registerstaff','storeStaff')->name('registerstaff');    
+// });
 
 // ----------------------------- forget password ----------------------------//
 Route::controller(ForgotPasswordController::class)->group(function () {

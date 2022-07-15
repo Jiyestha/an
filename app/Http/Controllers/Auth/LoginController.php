@@ -69,7 +69,7 @@ class LoginController extends Controller
 
         $activityLog = [
 
-            'name'        => $email,
+            // 'name'        => $email,
             'email'       => $email,
             'description' => 'has log in',
             'date_time'   => $todayDate,
@@ -96,14 +96,14 @@ class LoginController extends Controller
         Session::put('user', $user);
         $user=Session::get('user');
 
-        $name       = $user->name;
+        // $name       = $user->name;
         $email      = $user->email;
         $dt         = Carbon::now();
         $todayDate  = $dt->toDayDateTimeString();
 
         $activityLog = [
 
-            'name'        => $name,
+            // 'name'        => $name,
             'email'       => $email,
             'description' => 'has logged out',
             'date_time'   => $todayDate,
