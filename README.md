@@ -1,6 +1,6 @@
-# hr_ms_laravel_9
+# Analgesia Project
 
-hr_ms_laravel_9
+Analgesia Project
 
 ## Getting started
 
