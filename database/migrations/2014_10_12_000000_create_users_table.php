@@ -18,6 +18,7 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('join_date')->unique();
+            $table->string('rec_id')->unique();
             $table->string('phone_number')->nullable();
             $table->string('status')->nullable();
             $table->string('role_name')->nullable();
@@ -34,6 +35,7 @@ class CreateUsersTable extends Migration
             [
                 'name'=>'USERTEST',
                 'email'=>'usertest@gmail.com',
+                'rec_id'=>'ID_0000000001',
                 'join_date'=>'Wed, Jul 13, 2022 6:20 PM',
                 'phone_number'=>'0123',
                 'status'=>'Active',
@@ -44,6 +46,7 @@ class CreateUsersTable extends Migration
             [
                 'name'=>'IT',
                 'email'=>'it@gmail.com',
+                'rec_id'=>'ID_0000000002',
                 'join_date'=>'Wed, Jul 13, 2022 6:21 PM',
                 'phone_number'=>'0123',
                 'status'=>'Active',
