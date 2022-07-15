@@ -34,13 +34,23 @@ class CreateUsersTable extends Migration
             [
                 'name'=>'USERTEST',
                 'email'=>'usertest@gmail.com',
-                'join_date'=>'Wed, Jul 13, 2022 6:19 PM',
+                'join_date'=>'Wed, Jul 13, 2022 6:20 PM',
                 'phone_number'=>'0123',
                 'status'=>'Active',
                 'role_name'=>'Pasien',
                 'avatar'=>'photo_defaults.jpg', 
                 'password' => '$2y$10$JHfUf6b49JuvUVDMHsM/He4eAil4E562DeCC7c.FezqTTqTn5jie2'
-            ]
+            ],
+            [
+                'name'=>'IT',
+                'email'=>'it@gmail.com',
+                'join_date'=>'Wed, Jul 13, 2022 6:21 PM',
+                'phone_number'=>'0123',
+                'status'=>'Active',
+                'role_name'=>'Admin',
+                'avatar'=>'photo_defaults.jpg', 
+                'password' => '$2y$10$JHfUf6b49JuvUVDMHsM/He4eAil4E562DeCC7c.FezqTTqTn5jie2'
+            ],
 
         ]);
 
